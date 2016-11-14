@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="szS-KJ-3w0">
+            <objects>
+                <viewController id="y1F-HE-PUh" customClass="HomeViewController" customModule="SwiftSouthWeekend" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5dY-Ou-k8S"/>
+                        <viewControllerLayoutGuide type="bottom" id="RIG-3E-lfP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pzP-qt-osn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TAW-Ce-aFL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1057" y="-691"/>
+        </scene>
+        <!--Custom Side Menu View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CustomSideMenuViewController" customModule="SwiftSouthWeekend" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1oH-Sz-fuo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1056.8" y="123.68815592203899"/>
+        </scene>
+        <!--Home Detail View Controller-->
+        <scene sceneID="Xh9-b2-jI8">
+            <objects>
+                <viewController storyboardIdentifier="HomeDetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Upo-Mo-SjM" customClass="HomeDetailViewController" customModule="SwiftSouthWeekend" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lhB-tE-5oa"/>
+                        <viewControllerLayoutGuide type="bottom" id="eJ5-Vn-PAO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hAF-Uu-EoF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ci-1n-Lnd" customClass="HJBottomToolBar" customModule="SwiftSouthWeekend" customModuleProvider="target">
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="6wp-Qf-Do6"/>
+                                </constraints>
+                            </view>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XfM-It-Z6R">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5ci-1n-Lnd" firstAttribute="top" secondItem="XfM-It-Z6R" secondAttribute="bottom" id="1Tj-d6-Rqe"/>
+                            <constraint firstItem="XfM-It-Z6R" firstAttribute="leading" secondItem="hAF-Uu-EoF" secondAttribute="leading" id="NUI-iF-47e"/>
+                            <constraint firstItem="5ci-1n-Lnd" firstAttribute="leading" secondItem="hAF-Uu-EoF" secondAttribute="leading" id="Uxs-Tr-1KL"/>
+                            <constraint firstAttribute="trailing" secondItem="XfM-It-Z6R" secondAttribute="trailing" id="aVI-5a-duF"/>
+                            <constraint firstItem="eJ5-Vn-PAO" firstAttribute="top" secondItem="5ci-1n-Lnd" secondAttribute="bottom" id="aXO-PY-Jae"/>
+                            <constraint firstItem="XfM-It-Z6R" firstAttribute="top" secondItem="hAF-Uu-EoF" secondAttribute="top" id="h7V-IP-QRH"/>
+                            <constraint firstAttribute="trailing" secondItem="5ci-1n-Lnd" secondAttribute="trailing" id="kMe-kh-LLf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomToolBar" destination="5ci-1n-Lnd" id="Hdu-0a-Jg5"/>
+                        <outlet property="webView" destination="XfM-It-Z6R" id="0WJ-5j-jZS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G1Q-6d-E5z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1744.8" y="123.68815592203899"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="iAh-gE-RSU">
+            <objects>
+                <viewController id="uli-Bb-99W" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qv1-BR-pnf"/>
+                        <viewControllerLayoutGuide type="bottom" id="XY2-Af-YLw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Rmz-t1-fnv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="南方周末" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R0Z-Jo-Hav">
+                                <frame key="frameInset" minX="65" minY="138" width="166" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nsG-EK-gtM">
+                        <nil key="title"/>
+                        <textField key="titleView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="zov-dA-OiL">
+                            <rect key="frame" x="45" y="7" width="286" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MrX-d8-DcZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3520.8000000000002" y="-141.67916041979012"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mB9-fY-09J">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NZ9-NJ-MA5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="iHv-Tb-zfl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="YgC-Z9-1QK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zEJ-Cp-Trr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="326" y="124"/>
+        </scene>
+        <!--Left Menu View Controller-->
+        <scene sceneID="KXT-TE-OOW">
+            <objects>
+                <viewController id="YuY-mv-Yu3" customClass="LeftMenuViewController" customModule="SwiftSouthWeekend" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4on-Bt-HUQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="o47-pp-xQ6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="t2Y-fm-CpC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pwl-gQ-yT6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1745" y="-691"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Fa2-ho-hdm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jGS-31-9EL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="mID-he-4sF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="uli-Bb-99W" kind="relationship" relationship="rootViewController" id="n9C-6s-mgM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DDi-n0-42E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2581.5999999999999" y="-141.67916041979012"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,68 @@
+PODS:
+  - Alamofire (4.0.1)
+  - AlamofireImage (3.0.0):
+    - Alamofire (~> 4.0)
+  - AlamofireObjectMapper (4.0.0):
+    - Alamofire (~> 4.0)
+    - ObjectMapper (~> 2.0)
+  - DateTools (1.7.0)
+  - ECSlidingViewController (2.0.3)
+  - JazzHands (2.0.8)
+  - MJRefresh (3.1.12)
+  - ObjectMapper (2.0.0)
+  - RazzleDazzle (0.1.4)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - SideMenuController (0.2.0)
+  - SnapKit (3.0.1)
+  - StyledPageControl (1.0)
+  - SwiftMessages (3.0.2)
+  - SwiftyJSON (3.1.0)
+  - XLForm (3.2.0)
+  - XLPagerTabStrip (6.0.0)
+  - YLMoment (0.6.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.0)
+  - AlamofireImage (~> 3.0)
+  - AlamofireObjectMapper (~> 4.0)
+  - DateTools
+  - ECSlidingViewController (~> 2.0.3)
+  - JazzHands
+  - MJRefresh
+  - ObjectMapper
+  - RazzleDazzle
+  - SDWebImage
+  - SideMenuController
+  - SnapKit (~> 3.0)
+  - StyledPageControl
+  - SwiftMessages
+  - SwiftyJSON (~> 3.1.0)
+  - XLForm
+  - XLPagerTabStrip (~> 6.0)
+  - YLMoment
+
+SPEC CHECKSUMS:
+  Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
+  AlamofireImage: 6594aa1139a67dcd36cde6da79ea4e5b318e60fb
+  AlamofireObjectMapper: 9faa3ce5a240efda1b209009a2d6e1e949227abc
+  DateTools: 53288ee8b905fdc75897a1e6b5cc0144b14cba60
+  ECSlidingViewController: 6485c14f23b4487e9946535421ca8f111f86cc53
+  JazzHands: 355dc5c2b6fc38ee460d0ed7836c69539263f477
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  ObjectMapper: aed2570edabbd3c9b26c939e1cabdb6558f933e0
+  RazzleDazzle: 63a140fd0048de82ab95699008e99294c5492068
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  SideMenuController: fe6ce032847d4021ac5ead7ee1b05364df5739e7
+  SnapKit: f818b8326d45b4e1c777d0ab27b5c0a3624bfdeb
+  StyledPageControl: b49f33cb65b99370a78a490fac127b1ca6472fd0
+  SwiftMessages: 3523c331c6b7b66e6f23a970ced259065ba31f9c
+  SwiftyJSON: 29b9f2a64f118c07e691667c2ba1efe536acfe0b
+  XLForm: 2250b4e96ab8ffa5f3355838c79edd90de451782
+  XLPagerTabStrip: c46e802a8dcac29edbcea573de8fe920e052455b
+  YLMoment: a342e85269150756105901c4b701070154f82c16
+
+PODFILE CHECKSUM: 9f402228b61ec78757b6bd29e15153853a57c226
+
+COCOAPODS: 1.1.0.beta.2
